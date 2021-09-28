@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="searchDiv">
+        <div class="searchForm">
+          <label for="stdNo">Student No :</label>
+          <input id="StudentNoForSearch" type="text" />
+          <input
+            id="buttonForSearch"
+            class="commonButton"
+            type="button"
+            value="Find Student"
+          />
+        </div>
+
+        <div class="resultsDiv">
+          <div class="studentNo result">
+            <h5>Student No</h5>
+            <p id="studentNo">-</p>
+          </div>
+          <div class="firstName result">
+            <h5>First Name</h5>
+            <p id="firstName">-</p>
+          </div>
+          <div class="lastName result">
+            <h5>Last Name</h5>
+            <p id="lastName">-</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="addDiv">
+        <div class="addForm">
+          <label for="stdNo">Student No :</label
+          ><input id="stdNoForAdd" type="text" />
+          <label for="fName">First Name :</label
+          ><input id="fNameForAdd" type="text" />
+          <label for="lName">Last Name :</label
+          ><input id="lNameForAdd" type="text" />
+        </div>
+
+        <div class="buttonDiv">
+          <input
+            id="buttonForAdd"
+            class="addButton commonButton"
+            type="button"
+            value="Add Student"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <span class="popuptext" id="myPopup">Successfully Added Data</span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

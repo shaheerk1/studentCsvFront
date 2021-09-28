@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  height: 30px;
+  width: 140px;
+}
+
+.main-container {
+  padding: 20px;
+  margin: 10px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.searchDiv {
+  gap: 20px;
+  padding: 20px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addDiv {
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  border: solid 1px black;
+  display: flex;
+}
+
+.searchForm {
+  gap: 10px;
+  display: flex;
+}
+
+.resultsDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttonDiv {
+  /*no styles for now*/
+}
+
+.addButton {
+  position: relative;
+  top: 85%;
+}
+
+.commonButton {
+  border: solid 1px black;
+  background-color: rgb(182, 205, 255);
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: fixed;
+  top: 10px;
+  left: 45vw;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1ms;
+  animation: fadeIn 1ms;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
